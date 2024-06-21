@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "UAF_Sans";
+    src:
+    url("./fonts/UAF_Sans/UAFSans-Regular.ttf") format("truetype"),
+    url("./fonts/UAF_Sans/UAFSans-Bold.ttf") format("truetype"),
+      url("./fonts/UAF_Sans/UAFSans-Medium.ttf") format("truetype"),
+      url("./fonts/UAF_Sans/UAFSans-NameTape.ttf") format("truetype"),
+      url("./fonts/UAF_Sans/UAFSans-OnBoard.ttf") format("truetype"),
+          url("./fonts/UAF_Sans/UAFSans-SemiBold.ttf") format("truetype");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "UAF_Sans";
+    box-sizing: border-box;
+}
+.wrap{
+   width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header{
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    background-color: lightgray;
+    padding: 10px 0;
+}
+.header-wrap{ display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+.header_left{
+    text-align: left;
+    text-transform: uppercase;
+}
+.left_top{
+    font-size: 30px;
+}
+.left_top span{
+    font-size: 16px;
+}
+    .header_right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+.header_right img{
+    height: 40px;
+    width: 30px;
+}
+.header_right img.IPVO{
+    width: 40px;
+    margin-left: 10px;
+}
+.main{
+    margin-bottom: 50px;
+}
+.main_header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main_header-left{
+    text-align: left;
+}
+.main_header-right img{
+    width: 30px;
+    height: 30px;
+    transition: 300ms;
+}
+.left img{
+    rotate: 180deg;
+}
+.main_schedule-wrap{
+    display: flex;
+   font-size: 14px;
+   align-items: center;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   border-bottom: 1px dotted black;
+}
+.schedule-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.main_schedule-topic{
+    font-weight: 600;
+}
+.main_schedule-topic, .main_schedule-lector a{
+    margin-left: 20px;
+    color: black;
+}
+.main_schedule-lector a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main_schedule-time{
+   width: 50px;
+    text-align: start;
+}
+.main_header-data{margin-bottom: 5px;}
+.lector-datails img{
+    width: 15px;
+    height: 15px;
+    transition: 300ms;
+}
+.footer_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.footer_qcode img{
+   
+    width: 80px;
+}
+.footer_text{
+    font-size: 8px;
+}
+.lector-datails:hover img, .main_header-right img:hover {
+      rotate: 45deg;
+      transition: 300ms;
+}
+.left:hover img{
+    rotate: 135deg;
+   
+    transition: 300ms;
+}
+@media screen and (min-width: 720px)  {
+    .wrap{
+        width: 720px;
+        padding-left: 0px;
+        padding-right: 0px;
+             }
+             .schedule-wrap {
+                text-align: end;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+            .main_schedule-time{
+                width: 100px;
+                white-space: nowrap;}
+    .main_schedule{
+        width: 700px;
+    }
+    .footer_qcode img{
+        width: 100px;}
+}
+@media screen and (min-width: 1024px)  {
+    .wrap{
+        width: 1024px;
+             }
+            
+    .main_schedule{
+        width:1000px;
+    }
+}
